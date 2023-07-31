@@ -16,11 +16,10 @@ const ContactFAQ = (props)=>{
    <h1 className="font-bold text-xl">{props.question}</h1>
   </div>
   <img
-    src={props.img2}
+    src={expanded?props.img3:props.img2}
     width="40.85px"
     onClick={toggleHandler}
-    className="cursor-pointer"
-  />
+    className="cursor-pointer" />
 </div>
 {expanded && <div className="w-[580px] px-11 text-gray-500 text-current">{props.answer}</div>}
 </div>
